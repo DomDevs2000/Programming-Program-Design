@@ -7,10 +7,12 @@
  */
 public class MyProgram {
     public void runMyProgram() {
+
         int days = 22;
         int remainingDays = days % 7;
         int daysIntoWeeks = days / 7;
 
+        System.out.println(daysIntoWeeks + " Weeks" + " And " + remainingDays + " Days");
 
     }
 

@@ -7,8 +7,8 @@
  */
 public class MyProgram {
     public void runMyProgram() {
-        int length = 10;
 
+        int length = 10;
         int metresIntoCentimetres = length * 100;
 
         System.out.println(metresIntoCentimetres + " Centimetres");
