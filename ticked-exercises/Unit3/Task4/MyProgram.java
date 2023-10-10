@@ -8,12 +8,19 @@ import java.util.*;
  */
 public class MyProgram {
     public void runMyProgram() {
+
         Scanner userInput = new Scanner(System.in);
         String name = userInput.nextLine();
+        String secondName = userInput.nextLine();
 
-        if (name == "fred") {
-            System.out.println("true");
+        if (name.equals(secondName)) {
+            System.out.println("the same");
+        } else {
+            System.out.println("different");
+
         }
+
+        userInput.close();
     }
 
     public static void main(String[] args) {
