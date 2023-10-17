@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=MyProgram
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyProgram\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ runMyProgram()
+comment2.params=
+comment2.target=int\ getCelsius()
+comment2.text=\ This\ method(function)\ asks\ for\ user\ input\ and\r\n\ returns\ the\ value\ input\r\n\ This\ is\ a\ typical\ "input"\ fundtion\r\n
+comment3.params=celsius
+comment3.target=double\ converter(int)
+comment3.text=\ This\ method\ (function)\ converts\ a\ Celsius\ value\r\n\ to\ a\ Fahrenheit\ value.\ \ It\ takes\ an\ int\ and\ returns\ a\ double\r\n\ This\ is\ a\ typical\ "processing"\ function\r\n
+comment4.params=fahrResult
+comment4.target=void\ printResult(double)
+comment4.text=\ This\ method\ (procedure)\ takes\ a\ double\ and\ displays\ it\r\n\ for\ the\ user\r\n\ This\ is\ a\ typical\ "output"\ procedure\r\n
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6
