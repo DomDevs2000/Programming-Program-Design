@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ runMyProgram()
+comment1.params=
+comment1.target=int[]\ inArray()
+comment1.text=\ method\ to\ fill\ the\ DB\ with\ random\ numbers\r\n
+comment2.params=list\ skey
+comment2.target=int\ search(int[],\ int)
+comment2.text=\ method\ to\ search\ a\ int[]\ using\ a\ search\ key\r\n
+comment3.params=list
+comment3.target=void\ printArray(int[])
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5
