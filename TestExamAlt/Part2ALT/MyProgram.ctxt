@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ runMyProgram()
+comment1.params=l\ w
+comment1.target=double\ rectangleArea(double,\ double)
+comment2.params=rad
+comment2.target=double\ circleArea(double)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
