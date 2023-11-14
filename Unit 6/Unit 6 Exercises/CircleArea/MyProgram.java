@@ -26,9 +26,6 @@ public class MyProgram
         return radius;
     }
     
-    
-    
-        
         
     public static void main(String[] args)
     { 
