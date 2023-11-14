@@ -5,6 +5,9 @@
  * @author (your name)
  * @version (a version number or a date)
  */
+
+import java.time.LocalDate;
+
 /**
  * MyProgram
  */
@@ -13,8 +16,13 @@ public class StockItem {
     private String description;
     private int level;
     private double price;
+    private LocalDate sellByDate = LocalDate.of(1999, 99, 99);
 
     public StockItem(String description, double price) {
+    }
+
+    public StockItem(String description, double price, LocalDate date) {
+
     }
 
     public void printReport() {
@@ -23,10 +31,15 @@ public class StockItem {
                 Item : %s
                 Price: %f
                 Stock level : %d
+                Sell By Date: %d
                 **********************************
 
-                        """, description, price, level);
+                        """, description, price, level, sellByDate);
 
+    }
+
+    public void setSellByDate(LocalDate sellByDate) {
+        this.sellByDate = sellByDate;
     }
 
     public double changePrice(double price) {
