@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=MyProgram
+comment0.text=\n\ Write\ a\ description\ of\ class\ MyProgram\ here.\n\ \n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=void\ runMyProgram()
+comment2.params=
+comment2.target=int\ getNumber()
+comment2.text=\n\ This\ method(function)\ asks\ for\ user\ to\ input\ a\ number\ and\n\ returns\ the\ value\ input\n\ This\ is\ a\ typical\ "input"\ fundtion\n
+comment3.params=x\ y
+comment3.target=int\ add(int,\ int)
+comment3.text=\n\ This\ method\ (function)\ adds\ two\ numbers\n\ This\ is\ a\ typical\ "processing"\ function\n
+comment4.params=x\ y
+comment4.target=int\ subtract(int,\ int)
+comment5.params=x\ y
+comment5.target=int\ multiply(int,\ int)
+comment6.params=x\ y
+comment6.target=int\ divide(int,\ int)
+comment7.params=ans
+comment7.target=void\ printResult(int)
+comment7.text=\n\ This\ method\ (procedure)\ takes\ an\ int\ and\ displays\ it\n\ for\ the\ user\n\ This\ is\ a\ typical\ "output"\ procedure\n
+comment8.params=
+comment8.target=void\ printMenu()
+comment9.params=args
+comment9.target=void\ main(java.lang.String[])
+numComments=10
