@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=p
+comment0.target=void\ addPatient(Patient)
+comment0.text=\ \r\n\ Adds\ a\ Patient\ object\ to\ the\ array\r\n\ @param\ p\ is\ the\ reference\ to\ the\ Patient\ object\r\n
+comment1.params=pN\ nme\ gp\ d\ m\ y
+comment1.target=void\ addPatient(int,\ java.lang.String,\ java.lang.String,\ int,\ int,\ int)
+comment1.text=\ \r\n\ Adds\ a\ Patient\ object\ to\ the\ array\r\n\ @param\ pN\ is\ the\ patient's\ number\r\n\ @param\ nme\ is\ the\ patient's\ name\r\n\ @param\ gp\ is\ the\ patient's\ GP\r\n\ @param\ d\ -\ day\ of\ patient's\ birth\r\n\ @param\ m\ -\ month\ of\ patients'\ birth\r\n\ @param\ y\ -\ year\ of\ patient's\ birth\r\n
+comment2.params=pos\ pp
+comment2.target=void\ addPatient(int,\ Patient)
+comment2.text=\ \r\n\ Adds\ a\ Patient\ object\ to\ the\ array\ at\ the\ specified\ position\r\n\ @param\ pos\ it\ the\ position\ \r\n\ @param\ pp\ is\ the\ reference\ to\ the\ Patient\ object\r\n
+comment3.params=index
+comment3.target=void\ removePatient(int)
+comment4.params=PNo
+comment4.target=int\ findPatientbyPNo(int)
+comment4.text=\ Returns\ the\ position\ in\ the\ array\ of\ the\ patient\ with\ the\ \r\n\ \ specified\ patient\ number\r\n\ \ @param\ PNo\ is\ the\ patient's\ number\r\n\ \ @return\ the\ position\ of\ the\ patient\ in\ the\ array,\ \r\n\ \ or\ -1\ if\ not\ found\r\n
+comment5.params=pos
+comment5.target=Patient\ getPatient(int)
+comment6.params=PNo
+comment6.target=Patient\ getPatientbyPNo(int)
+comment7.params=
+comment7.target=void\ print()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

@@ -1,0 +1,49 @@
+Class documentation
+<---- javadoc command: ---->
+c:\j2sdk1.4.2_04\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-source
+1.4
+-noindex
+-notree
+-nohelp
+-nonavbar
+-d
+G:\BlueJ (our examples) Level 1 2005\hospital\doc
+-classpath
+C:\BlueJ\lib\junit.jar
+G:\BlueJ (our examples) Level 1 2005\hospital\DayLog.java
+<---- end of javadoc command ---->
+Loading source file G:\BlueJ (our examples) Level 1 2005\hospital\DayLog.java...
+Constructing Javadoc information...
+G:\BlueJ (our examples) Level 1 2005\hospital\DayLog.java:23: cannot resolve symbol
+symbol  : class Patient 
+location: class DayLog
+    public void addPatient(Patient p, int h, int m)
+                           ^
+G:\BlueJ (our examples) Level 1 2005\hospital\DayLog.java:40: cannot resolve symbol
+symbol  : class Patient 
+location: class DayLog
+    public int findWaitingPosition(Patient p)
+                                   ^
+G:\BlueJ (our examples) Level 1 2005\hospital\DayLog.java:45: cannot resolve symbol
+symbol  : class Patient 
+location: class DayLog
+    public void treatPatient(Patient p, int h, int m)
+                             ^
+Standard Doclet version 1.4.2_04
+Generating G:\BlueJ (our examples) Level 1 2005\hospital\doc\constant-values.html...
+Building tree for all the packages and classes...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating G:\BlueJ (our examples) Level 1 2005\hospital\doc\allclasses-frame.html...
+Generating G:\BlueJ (our examples) Level 1 2005\hospital\doc\allclasses-noframe.html...
+Generating G:\BlueJ (our examples) Level 1 2005\hospital\doc\index.html...
+Generating G:\BlueJ (our examples) Level 1 2005\hospital\doc\packages.html...
+Generating G:\BlueJ (our examples) Level 1 2005\hospital\doc\DayLog.html...
+Generating G:\BlueJ (our examples) Level 1 2005\hospital\doc\package-list...
+Generating G:\BlueJ (our examples) Level 1 2005\hospital\doc\stylesheet.css...
+3 warnings
