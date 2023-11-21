@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Patient
+comment0.text=\n\ Used\ to\ store\ information\ about\ a\ patient\ Including\ patient\ no.,\ name,\ GP\n\ name\n\ date\ of\ birth,\ time\ arrived\ and\ the\ time\ treatment\ was\ started\n\ \n\ @author\ A.A.Marczyk\n\ @version\ 22/11/04\n
+comment1.params=pNo\ n\ gp\ dd\ mm\ yy
+comment1.target=Patient(int,\ java.lang.String,\ java.lang.String,\ int,\ int,\ int)
+comment1.text=\n\ Creates\ a\ patient\n\ \n\ @param\ pNo\ \ \ \ \ \ represents\ the\ patient's\ number\n\ @param\ n\ \ \ \ \ \ \ \ represents\ the\ name\n\ @param\ gp\ \ \ \ \ \ \ represents\ the\ GP's\ (family\ doctor's)\ name\n\ @param\ dd,mm,yy\ represent\ the\ components\ of\ the\ date\ of\ birth\n
+comment2.params=hours
+comment2.target=void\ updateWaitingTime(int)
+comment3.params=
+comment3.target=int\ getPatientNo()
+comment3.text=\n\ Returns\ the\ patient's\ number\n\ \n\ @return\ patient\ number\n
+comment4.params=
+comment4.target=java.lang.String\ getName()
+comment4.text=\n\ Returns\ the\ patient's\ name\n\ \n\ @return\ name\n
+comment5.params=
+comment5.target=java.lang.String\ getGPName()
+comment5.text=\n\ Returns\ the\ patient's\ GP's\ name\n\ \n\ @return\ GP\ name\n
+comment6.params=
+comment6.target=Date\ getDOB()
+comment6.text=\n\ Returns\ the\ patient's\ date\ of\ birth\n\ \n\ @return\ date\ of\ birth\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\n\ Returns\ a\ String\ representation\ of\ the\ patient\ information\n\ \n\ @return\ the\ patient\ information\ as\ a\ String\n
+numComments=8
