@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=AEUsersMap
+comment1.params=p
+comment1.target=void\ addPatient(Patient)
+comment2.params=pNo\ nme\ gp\ d\ m\ y
+comment2.target=void\ addPatient(int,\ java.lang.String,\ java.lang.String,\ int,\ int,\ int)
+comment3.params=index\ patient
+comment3.target=void\ addPatient(int,\ Patient)
+comment4.params=patient
+comment4.target=void\ removePatient(Patient)
+comment5.params=pNo
+comment5.target=int\ findPatientByPNo(int)
+comment6.params=pNo
+comment6.target=Patient\ getPatient(int)
+comment7.params=pNo
+comment7.target=Patient\ getPatientByPNo(int)
+comment8.params=
+comment8.target=void\ updateAll()
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10
