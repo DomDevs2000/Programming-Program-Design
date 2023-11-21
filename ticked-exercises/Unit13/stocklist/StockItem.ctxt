@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=StockItem
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ stockItem\ here.\r\n\ \r\n\ This\ version\ is\ a\ soluiton\ to\ Practical\ 04,\ incorporating\ solutions\ to\ Task\ 2\ and\ 9\r\n\ @author\ A.Marczyk\ \r\n\ @version\ 8.10.2004\r\n
+comment1.params=desc\ pr
+comment1.target=StockItem(java.lang.String,\ int)
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment2.params=pr
+comment2.target=void\ setPrice(int)
+comment3.params=
+comment3.target=void\ setOnOrder()
+comment4.params=amount
+comment4.target=void\ doDelivery(int)
+comment5.params=amount
+comment5.target=void\ doSale(int)
+comment6.params=
+comment6.target=boolean\ orderMore()
+comment7.params=
+comment7.target=int\ getPrice()
+comment8.params=
+comment8.target=int\ getQuantity()
+comment9.params=
+comment9.target=void\ printStockReport()
+numComments=11
