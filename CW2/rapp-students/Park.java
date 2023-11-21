@@ -69,6 +69,7 @@ public class Park implements RAPP
     }
                 
     /**Returns a String representation of all the passes on specified zone
+     * @param zone is the name of the zone
      * @return a String representation of all passes on specified zone
      **/
     public String getAllPassesInOneZone(String zone)
@@ -87,7 +88,7 @@ public class Park implements RAPP
      * AND the pass id is for a pass on the system
      * AND the bridge code is the code for a bridge on the system
      * @param trId is the id of the pass requesting the move
-     * @param znCode is the code of the bridge journey by which the pass wants to pPassel
+     * @param znCode is the code of the bridge by which the pass wants to move
      * @return true if the pass is allowed on the bridge journey, false otherwise 
     **/
     public boolean canMove(int trId, String znCode)
@@ -110,7 +111,7 @@ public class Park implements RAPP
      * If bridge journey cannot be made, the state of the system remains unchanged
      * and a message specifying the reason is returned.
      * @param pPassId is the id of the pass requesting the move
-     * @param znCode is the code of the bridge journey by which the pass wants to pPassel
+     * @param znCode is the code of the bridge by which the pass wants to move
      * @return a String giving the result of the request 
      **/
     public String move(int pPassId, String znCode )
