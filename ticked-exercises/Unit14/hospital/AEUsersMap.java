@@ -9,11 +9,11 @@ public class AEUsersMap {
 
     public void addPatient(int pNo, String nme, String gp, int d, int m, int y) {
         Patient patient = new Patient(pNo, nme, gp, d, m, y);
-        users.put(pNo, patient);
+        users.put(pNo,patient);
     }
 
     public void addPatient(int index, Patient patient) {
-        users.put(patient.getPatientNo(), patient);
+        users.put(index, patient);
     }
 
     public void removePatient(int pNo) {

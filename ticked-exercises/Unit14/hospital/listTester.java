@@ -19,10 +19,10 @@ public class listTester {
         lister.addPatient(555, "EEE", "C1", 5, 6, 2009);
         lister.addPatient(new Patient(666, "FFF", "A1", 8, 9, 2008));
         lister.addPatient(2, new Patient(999, "ZZZ", "A1", 8, 9, 2008));
-        lister.print();
+        //lister.print();
 
         System.out.println("*********remove 4*******");
-        lister.removePatient(4);
+        //lister.removePatient(4);
         System.out.println(lister.toString());
 
         System.out.println("*****find Patient****");
@@ -41,7 +41,7 @@ public class listTester {
         System.out.println(lister.getPatientByPNo(888));
 
         System.out.println("*****get Patient by UpdateTime****");
-        System.out.println(lister.updatedAll());
+        // System.out.println(lister.updatedAll());
 
     }
 
