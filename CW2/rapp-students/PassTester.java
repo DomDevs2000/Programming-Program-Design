@@ -7,10 +7,14 @@
  */
 public class PassTester {
     public static void main(String[] args) {
-        Pass pass = new Pass("Aidan", 10, 10, 10, 10);
+        Pass pass = new Pass("Aidan", 10, 5, 15, 20);
         int passId = pass.getPassID();
+        int luxuryRating = pass.getLuxuryRating();
+        int credits = pass.getNoOfCredits();
 
-        System.out.println(passId);
+        System.out.println(passId + " expect passID of 10");
+        System.out.println(luxuryRating + " expect  luxury rating of 5");
+        System.out.println(credits + " expect credits of 15");
 
     }
 
