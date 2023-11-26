@@ -12,7 +12,7 @@ public class Pass {
     private int noOfCredits;
     private int noOfPoints;
 
-    public Pass(String guestName, int passID, int luxuryRating, int noOfCredits, int noOfPoints) {
+    public Pass(String guestName, int passID, int luxuryRating, int noOfCredits) {
         this.guestName = guestName;
         this.passID = passID;
         this.luxuryRating = luxuryRating;
