@@ -1,2 +1,18 @@
 #BlueJ class context
-numComments=0
+comment0.target=Zone
+comment0.text=\n\ A\ Zone\ is\ part\ of\ a\ RAPP\ resort.Each\ zone\ has\ a\ name,\ a\ luxury\ rating\n\ and\ a\ capacity\ which\ represents\ the\ maximum\ number\ of\ people(passes)\ who\ can\n\ be\ on\ the\n\ zone\ at\ any\ one\ time.\ Each\ zone\ must\ maintain\ a\ list\ of\ all\ people\ (passes)\n\ currently\ on\ the\ zone.\ These\ lists\ are\ updated\ whenever\ passes\ enter\ or\ leave\n\ an\ zone,so\ that\ it\ is\ always\ possible\ to\ say\ how\ many\ people\ (passes)\ are\ in\n\ the\ zone\n\ and\ who\ they\ are.\n\ \n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=name\ zoneNumber\ luxuryRating\ capacity\ noOfPeople
+comment1.target=Zone(java.lang.String,\ int,\ int,\ int,\ int)
+comment2.params=
+comment2.target=int\ getZoneNumber()
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment4.params=
+comment4.target=int\ getLuxuryRating()
+comment5.params=pass
+comment5.target=void\ enter(Pass)
+comment6.params=pass
+comment6.target=void\ leave(Pass)
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

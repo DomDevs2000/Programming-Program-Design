@@ -8,7 +8,6 @@
 public class PassTester {
     public static void main(String[] args) {
         Pass pass = new Pass("Aidan", 10, 5, 15);
-
         int passId = pass.getPassID();
         int luxuryRating = pass.getLuxuryRating();
         int credits = pass.getNoOfCredits();

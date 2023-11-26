@@ -1,2 +1,20 @@
 #BlueJ class context
-numComments=0
+comment0.target=Pass
+comment0.text=\n\ A\ Pass\ has\ an\ id\ number,\ name,\ a\ luxury\ rating,\ number\ of\ credits\ and\ points.\n\ \n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=guestName\ passID\ luxuryRating\ noOfCredits
+comment1.target=Pass(java.lang.String,\ int,\ int,\ int)
+comment2.params=
+comment2.target=int\ getPassID()
+comment3.params=
+comment3.target=int\ getLuxuryRating()
+comment4.params=
+comment4.target=int\ getNoOfCredits()
+comment5.params=
+comment5.target=boolean\ isEnoughCredits()
+comment6.params=
+comment6.target=void\ travel()
+comment7.params=
+comment7.target=int\ pointsToCredits()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9
