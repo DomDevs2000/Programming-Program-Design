@@ -15,7 +15,7 @@ public class Pass {
     public Pass(String guestName, int passID, int luxuryRating, int noOfCredits) {
         this.guestName = guestName;
         this.passID = passID;
-        this.luxuryRating = luxuryRating;
+        this.luxuryRating = luxuryRating; // NOTE: VALIDATE rating is 1-10
         this.noOfCredits = noOfCredits;
         this.noOfPoints = 0;
     }
@@ -33,14 +33,21 @@ public class Pass {
     }
 
     public boolean isEnoughCredits() {
-        if (noOfCredits > 0) {
+        if (noOfCredits >= 4) {
             return true;
         } else {
             return false;
         }
     }
 
-    public int pointsToCredits(int noOfPoints) {
+    public void travel() {
+        if (isEnoughCredits()) {
+            noOfCredits -= 4;
+            noOfPoints += 1;
+        }
+    }
+
+    public int pointsToCredits() {
         int convertedPoints = noOfPoints / 3;
         return noOfCredits = convertedPoints;
     }
