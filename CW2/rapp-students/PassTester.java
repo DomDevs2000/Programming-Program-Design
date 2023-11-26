@@ -15,7 +15,7 @@ public class PassTester {
         System.out.println(passId + " expect passID of 10");
         System.out.println(luxuryRating + " expect  luxury rating of 5");
         System.out.println(credits + " expect credits of 15");
-
+        System.out.println(pass.toString());
     }
 
 }
