@@ -55,6 +55,33 @@ public class Zone {
         }
     }
 
+    public int isFull() {
+        if (passes.size() >= capacity) {
+        }
+        return capacity;
+    }
+
+    public boolean isPassInZone(Pass pass) {
+        if (passes.contains(pass)) {
+            return true;
+        }
+        return false;
+    }
+
+    public void listAllPasses() {
+        for (Pass pass : passes) {
+
+            System.out.println(pass); // dont use sout
+
+        }
+    }
+
+    public void findPass() {
+        for (Pass pass : passes) {
+            System.out.println(pass); // dont use sout
+        }
+    }
+
     public String toString() {
         return "Zone [name=" + name + ", zoneNumber=" + zoneNumber + ", luxuryRating=" + luxuryRating + ", capacity="
                 + capacity + ", noOfPeople=" + noOfPeople + "]";
