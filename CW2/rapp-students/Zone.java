@@ -55,10 +55,11 @@ public class Zone {
         }
     }
 
-    public int isFull() {
+    public boolean isFull() {
         if (passes.size() >= capacity) {
+            return true;
         }
-        return capacity;
+        return false;
     }
 
     public boolean isPassInZone(Pass pass) {
@@ -78,14 +79,13 @@ public class Zone {
     public void listAllPasses() {
         for (Pass pass : passes) {
 
-            pass.toString(); // dont use sout
-
+            pass.toString();
         }
     }
 
     public void findPass() {
         for (Pass pass : passes) {
-            pass.toString(); // dont use sout
+            pass.toString();
         }
     }
 

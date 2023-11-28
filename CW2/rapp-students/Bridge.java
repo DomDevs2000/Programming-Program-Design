@@ -31,7 +31,7 @@ public class Bridge {
     }
 
     public boolean canUseBridge(Pass pass) {
-        if (destinationZone.noOfPeople < destinationZone.capacity) {
+        if (destinationZone.isFull()) {
             return true;
         } else {
             return false;
