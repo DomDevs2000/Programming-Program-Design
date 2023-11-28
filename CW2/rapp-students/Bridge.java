@@ -8,15 +8,14 @@
  * @version (a version number or a date)
  */
 public class Bridge {
-    private int bridgeCode;
-    private Zone sourceZone;
-    private Zone destinationZone;
+    int bridgeCode;
+    Zone sourceZone;
+    Zone destinationZone;
 
     public Bridge(int bridgeCode, Zone sourceZone, Zone destinationZone) {
         this.bridgeCode = bridgeCode;
-        this.sourceZone = new Zone("Lobby", 0, 0, 1000, 1000);
-        this.destinationZone = new Zone("Concorse", 1, 1, 100, 10);
-
+        this.sourceZone = sourceZone;
+        this.destinationZone = destinationZone;
     }
 
     public int getBridgeCode() {
@@ -36,6 +35,17 @@ public class Bridge {
             return true;
         } else {
             return false;
+        }
+    }
+
+    public String movePass(Pass pass) {
+        int luxuryRating = pass.getLuxuryRating();
+        if (canUseBridge(pass) && destinationZone.luxuryRating > luxuryRating) {
+            destinationZone.enter(pass);
+            pass.travel();
+            return "Zone Moved - Credits deducted";
+        } else {
+            return "Zone not moved - credits not deducted";
         }
     }
 
