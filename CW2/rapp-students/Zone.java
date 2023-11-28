@@ -16,11 +16,11 @@ import java.util.*;
  */
 
 public class Zone {
-    private String name;
-    private int zoneNumber;
-    private int luxuryRating;
-    private int capacity;
-    private int noOfPeople;
+    String name;
+    int zoneNumber;
+    int luxuryRating;
+    int capacity;
+    int noOfPeople;
 
     ArrayList<Pass> passes = new ArrayList<Pass>();
 
@@ -68,17 +68,24 @@ public class Zone {
         return false;
     }
 
+    // public void findPassDetails(int passId) {
+    // if (pass.getPassID() == passId) {
+    // return pass;
+    // } else
+    // return -1;
+    // }
+
     public void listAllPasses() {
         for (Pass pass : passes) {
 
-            System.out.println(pass); // dont use sout
+            pass.toString(); // dont use sout
 
         }
     }
 
     public void findPass() {
         for (Pass pass : passes) {
-            System.out.println(pass); // dont use sout
+            pass.toString(); // dont use sout
         }
     }
 
