@@ -8,17 +8,17 @@
  * @version (a version number or a date)
  */
 public class Bridge {
-    int bridgeCode;
-    Zone sourceZone;
-    Zone destinationZone;
+    private String bridgeCode;
+    private Zone sourceZone;
+    private Zone destinationZone;
 
-    public Bridge(int bridgeCode, Zone sourceZone, Zone destinationZone) {
+    public Bridge(String bridgeCode, Zone sourceZone, Zone destinationZone) {
         this.bridgeCode = bridgeCode;
         this.sourceZone = sourceZone;
         this.destinationZone = destinationZone;
     }
 
-    public int getBridgeCode() {
+    public String getBridgeCode() {
         return bridgeCode;
     }
 
