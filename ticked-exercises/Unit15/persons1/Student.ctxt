@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Student
+comment0.text=\r\n\ The\ Student\ class\ stores\ information\ about\ a\ student\ \ at\ the\ University\r\n\ Students\ are\ enrolled\ on\ only\ one\ course\ called\ a\ "pathway"\ e.g.\ "CS2",\ "CSP4"\r\n\ For\ simplicity,\ in\ this\ version\ the\ pathway\ is\ just\ stored\ as\ a\ String\r\n\ @author\ A.A.Marczyk\ \r\n\ @version\ 2\ -\ 24/11/2013\r\n\ \r\n
+comment1.params=id\ n\ pway
+comment1.target=Student(int,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Creates\ a\ Student\ with\ a\ unique\ id\ number\ and\ a\ name\ initialised\ from\ parameters\r\n\ Students\ are\ treated\ as\ "home"\ students\ by\ default\r\n\ @param\ id\ it\ is\ the\ responsibility\ of\ the\ client\ to\ ensure\ that\ id\ is\ a\ unique\ number\r\n\ @param\ n\ is\ the\ String\ representation\ of\ the\ student's\ name\r\n\ @param\ pway\ is\ the\ pathway\ given\ as\ a\ String\r\n
+comment2.params=
+comment2.target=int\ getIdNo()
+comment2.text=\r\n\ returns\ student\ id\ as\ an\ int\r\n\ @return\ value\ returned\ is\ student\ id\ as\ an\ int\r\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment3.text=\r\n\ returns\ student\ name\ as\ a\ String\r\n\ @return\ value\ returned\ is\ student\ name\ as\ a\ String\r\n
+comment4.params=
+comment4.target=boolean\ isInternational()
+comment4.text=\r\n\ @return\ returns\ true\ if\ the\ students\ is\ an\ international\ student,\ else\ false\r\n
+comment5.params=
+comment5.target=void\ setInternational()
+comment5.text=\r\n\ resets\ student\ from\ "Home"\ (default)\ to\ International\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ Returns\ a\ Styring\ represnetation\ of\ the\ student\r\n\ @return\ returns\ a\ String\ representation\ of\ the\ student,\ including\ the\ id\ number\ and\ name\r\n
+numComments=7
