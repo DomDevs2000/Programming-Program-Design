@@ -11,9 +11,8 @@ public class ZoneTester {
         zone.getLuxuryRating();
         zone.toString();
         zone.enter(pass);
-        zone.listAllPasses();
-        zone.findPass();
-        zone.isPassInZone(pass);
-
+        System.out.println(zone.listAllPasses());
+        System.out.println(zone.isPassInZone(pass));
+        System.out.println(zone.toString());
     }
 }
