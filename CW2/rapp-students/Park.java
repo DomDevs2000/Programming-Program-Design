@@ -173,6 +173,7 @@ public class Park implements RAPP {
 
     private void loadPasses() {
         allPasses.add(new Pass("John", 1, 3, 5));
+        // NOTE: add more people with different credits and luxury rating
 
     }
 
