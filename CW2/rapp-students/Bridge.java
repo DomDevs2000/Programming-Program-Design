@@ -32,7 +32,7 @@ public class Bridge {
 
     public boolean canUseBridge(Pass pass) {
         int passLuxuryRating = pass.getLuxuryRating();
-        if (!destinationZone.isFull() && destinationZone.luxuryRating >= passLuxuryRating) {
+        if (!destinationZone.isFull() && destinationZone.luxuryRating >= passLuxuryRating && pass.isEnoughCredits()) {
             return true;
         } else {
             return false;
@@ -40,10 +40,11 @@ public class Bridge {
     }
 
     public String movePass(Pass pass) {
-        int luxuryRating = pass.getLuxuryRating();
-        if (canUseBridge(pass) && destinationZone.luxuryRating > luxuryRating) {
+        if (canUseBridge(pass)) {
+            sourceZone.leave(pass);
             destinationZone.enter(pass);
             pass.travel();
+            // NOTE: rename zone moved to mved across bridge etc
             return "Zone Moved - Credits deducted";
         } else {
             return "Zone not moved - credits not deducted";
@@ -51,7 +52,8 @@ public class Bridge {
     }
 
     public String toString() {
-        return "Bridge [sourceZone=" + sourceZone + ", destinationZone=" + destinationZone + "]";
+        return "Bridge [sourceZone=" + sourceZone + "," + sourceZone.getZoneNumber() + ", destinationZone="
+                + destinationZone + "," + destinationZone.getZoneNumber() + "]";
     }
 
 }
