@@ -45,7 +45,9 @@ public class Zone {
     }
 
     public void enter(Pass pass) {
-        passes.add(pass);
+        if (!isFull()) {
+            passes.add(pass);
+        }
     }
 
     public void leave(Pass pass) {
@@ -69,29 +71,26 @@ public class Zone {
         return false;
     }
 
-    // public void findPassDetails(int passId) {
-    // if (pass.getPassID() == passId) {
-    // return pass;
-    // } else
-    // return -1;
-    // }
-
-    public void listAllPasses() {
+    public Pass findPassDetails(int passId) {
         for (Pass pass : passes) {
-
-            pass.toString();
+            if (pass.getPassID() == passId) {
+                return pass;
+            }
         }
+        return null;
     }
 
-    public void findPass() {
+    public String listAllPasses() {
+        String passesAsString = "";
         for (Pass pass : passes) {
-            pass.toString();
+            passesAsString += pass + "\n";
         }
+        return passesAsString;
     }
 
     public String toString() {
         return "Zone [name=" + name + ", zoneNumber=" + zoneNumber + ", luxuryRating=" + luxuryRating + ", capacity="
-                + capacity + ", noOfPeople=" + noOfPeople + "]";
+                + capacity + ", noOfPeople=" + noOfPeople + ", passes=" + listAllPasses() + "]";
     }
 
 }
