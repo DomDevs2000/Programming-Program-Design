@@ -16,11 +16,11 @@ import java.util.*;
  */
 
 public class Zone {
-    String name;
-    int zoneNumber;
-    int luxuryRating;
-    int capacity;
-    int noOfPeople;
+    private String name;
+    private int zoneNumber;
+    private int luxuryRating;
+    private int capacity;
+    private int noOfPeople;
 
     ArrayList<Pass> passes = new ArrayList<Pass>();
 

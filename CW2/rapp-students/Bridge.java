@@ -32,7 +32,8 @@ public class Bridge {
 
     public boolean canUseBridge(Pass pass) {
         int passLuxuryRating = pass.getLuxuryRating();
-        if (!destinationZone.isFull() && destinationZone.luxuryRating >= passLuxuryRating && pass.isEnoughCredits()) {
+        int destinationZoneLuxuryRating = destinationZone.getLuxuryRating();
+        if (!destinationZone.isFull() && destinationZoneLuxuryRating >= passLuxuryRating && pass.isEnoughCredits()) {
             return true;
         } else {
             return false;
