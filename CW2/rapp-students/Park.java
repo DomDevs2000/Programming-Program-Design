@@ -45,6 +45,11 @@ public class Park implements RAPP {
      * @return the details of the pass as a String, or "No such pass"
      */
     public String getPassDetails(int passId) {
+        for (Pass pass : allPasses) {
+            if (pass.getPassID() == passId) {
+                return pass.toString();
+            }
+        }
 
         return "";
     }
@@ -166,16 +171,11 @@ public class Park implements RAPP {
         bridges.add(new Bridge("EFG5", zones.get(3), zones.get(1)));
         bridges.add(new Bridge("GHJ6", zones.get(1), zones.get(4)));
         bridges.add(new Bridge("HJK7", zones.get(4), zones.get(1)));
-
-        // bridges.add(new Bridge("ABC1", new Zone("Lobby", 0, 0, 1000, 10), new
-        // Zone("Concorse", 1, 3, 100, 50)));
-        // bridges.add(new Bridge("BCD2", new Zone("Lobby", 0, 0, 1000, 10), new
-        // Zone("Concorse", 1, 3, 100, 50)));
-
     }
 
     private void loadPasses() {
         allPasses.add(new Pass("John", 1, 3, 5));
+        // NOTE: need to add all passes to lobby
         // NOTE: add more people with different credits and luxury rating
 
     }
@@ -186,6 +186,11 @@ public class Park implements RAPP {
      * @return the pass with the specified id
      **/
     private Pass getPass(int id) {
+        for (Pass pass : allPasses) {
+            if (pass.getPassID() == id) {
+                return pass;
+            }
+        }
 
         return null;
     }
@@ -196,7 +201,11 @@ public class Park implements RAPP {
      * @return the zone with the specified name
      **/
     private Zone getZone(String zoneName) {
-
+        for (Zone zone : zones) {
+            if (zone.getName().equals(zoneName)) {
+                return zone;
+            }
+        }
         return null;
     }
 
@@ -206,6 +215,12 @@ public class Park implements RAPP {
      * @return the zone with the specified name
      **/
     private Bridge getBridge(String br) {
+
+        for (Bridge bridge : bridges) {
+            if (bridge.getBridgeCode().equals(br)) {
+                return bridge;
+            }
+        }
         return null;
     }
 
