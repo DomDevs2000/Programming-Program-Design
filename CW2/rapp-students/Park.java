@@ -30,9 +30,12 @@ public class Park implements RAPP {
      * Returns all of the details of the park: its name and its zones
      * including lists of passes in each zone.
      */
+    @Override
     public String toString() {
 
-        return "";
+        return "Park [parkName=" + parkName + ", allPasses=" + allPasses + ", zones=" + zones + ", bridges=" + bridges
+                + "]";
+
     }
 
     /**
