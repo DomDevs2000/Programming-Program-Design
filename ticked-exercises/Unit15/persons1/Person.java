@@ -15,12 +15,4 @@ public class Person {
         return "Person [idNumber=" + idNumber + "]";
     }
 
-    public int getIdNumber() {
-        return idNumber;
-    }
-
-    public String getName() {
-        return name;
-    }
-
 }
