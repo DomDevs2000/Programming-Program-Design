@@ -22,7 +22,7 @@ public class Zone {
     private int capacity;
     private int noOfPeople;
 
-    private ArrayList<Pass> passes;
+    ArrayList<Pass> passes = new ArrayList<Pass>();
 
     public Zone(String name, int zoneNumber, int luxuryRating, int capacity, int noOfPeople) {
         this.name = name;
@@ -30,7 +30,6 @@ public class Zone {
         this.luxuryRating = luxuryRating;
         this.capacity = capacity;
         this.noOfPeople = noOfPeople;
-        passes = new ArrayList<Pass>();
     }
 
     public int getZoneNumber() {
