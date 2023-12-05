@@ -1,4 +1,18 @@
 #BlueJ class context
 comment0.target=Bridge
-comment0.text=\n\ A\ bridge\ provides\ a\ one-way\ connection\ between\ two\ zones.\ It\n\ has\ a\ bridge\ code\ and\ information\ about\ both\ the\ source\ and\n\ the\ destination\ zone\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-numComments=1
+comment0.text=\n\ A\ bridge\ provides\ a\ one-way\ connection\ between\ two\ zones.\ It\n\ has\ a\ bridge\ code\ and\ information\ about\ both\ the\ source\ and\n\ the\ destination\ zone\n\ \n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=bridgeCode\ sourceZone\ destinationZone
+comment1.target=Bridge(java.lang.String,\ Zone,\ Zone)
+comment2.params=
+comment2.target=java.lang.String\ getBridgeCode()
+comment3.params=
+comment3.target=Zone\ getSourceZone()
+comment4.params=
+comment4.target=Zone\ getDestinationZone()
+comment5.params=pass
+comment5.target=boolean\ canUseBridge(Pass)
+comment6.params=pass
+comment6.target=java.lang.String\ movePass(Pass)
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8
