@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=theTitle\ theArtist\ tracks\ time
+comment0.target=CD(java.lang.String,\ java.lang.String,\ int,\ int)
+comment0.text=\r\n\ Initialize\ the\ CD.\r\n\ @param\ theTitle\ The\ title\ of\ the\ CD.\r\n\ @param\ theArtist\ The\ artist\ of\ the\ CD.\r\n\ @param\ tracks\ The\ number\ of\ tracks\ on\ the\ CD.\r\n\ @param\ time\ The\ playing\ time\ of\ the\ CD.\r\n
+comment1.params=
+comment1.target=java.lang.String\ getMaker()
+comment1.text=\r\n\ @return\ The\ artist\ for\ this\ CD.\r\n
+comment2.params=
+comment2.target=int\ getNumberOfTracks()
+comment2.text=\r\n\ @return\ The\ number\ of\ tracks\ on\ this\ CD.\r\n
+comment3.params=dir
+comment3.target=void\ setMaker(java.lang.String)
+comment3.text=\ \r\n\ sets\ a\ new\ artist\r\n\ @dir\ the\ new\ artist\r\n
+comment4.params=trks
+comment4.target=void\ setTracks(int)
+comment4.text=\ \r\n\ sets\ number\ of\ tracks\r\n\ @trks\ number\ of\ tracks\r\n
+comment5.params=
+comment5.target=void\ print()
+comment5.text=\r\n\ Print\ details\ about\ this\ CD\ to\ the\ text\ terminal.\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

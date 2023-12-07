@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Database()
+comment0.text=\r\n\ Construct\ an\ empty\ Database.\r\n
+comment1.params=theItem
+comment1.target=void\ addItem(Item)
+comment1.text=\r\n\ Add\ a\ Item\ to\ the\ database.\r\n\ @param\ theItem\ The\ Item\ to\ be\ added.\r\n
+comment2.params=
+comment2.target=void\ list()
+comment2.text=\r\n\ Print\ a\ list\ of\ all\ currently\ stored\ Items\ and\ DVDs\ to\ the\r\n\ text\ terminal.\r\n
+comment3.params=
+comment3.target=void\ setAllOwn()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=
+comment5.target=java.lang.String\ getMakers()
+numComments=6
