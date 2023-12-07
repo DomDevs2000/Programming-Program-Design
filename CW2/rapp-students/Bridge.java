@@ -44,7 +44,7 @@ public class Bridge {
         if (canUseBridge(pass)) {
             sourceZone.leave(pass);
             destinationZone.enter(pass);
-            pass.travel();
+            pass.deductCredits();
             // NOTE: rename zone moved to mved across bridge etc
             return "Zone Moved - Credits deducted";
         } else {
