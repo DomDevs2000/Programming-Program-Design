@@ -40,7 +40,11 @@ public class Pass {
         }
     }
 
-    public void travel() {
+    public void addCredits(int credits) {
+        noOfCredits += noOfCredits + credits;
+    }
+
+    public void deductCredits() {
         if (isEnoughCredits()) {
             noOfCredits -= 4;
             noOfPoints += 1;
@@ -53,8 +57,8 @@ public class Pass {
     }
 
     public String toString() {
-        return "Pass [guestName=" + guestName + ", passID=" + passID + ", luxuryRating=" + luxuryRating
-                + ", noOfCredits=" + noOfCredits + ", noOfPoints=" + noOfPoints + "]";
+        return "Pass \n guestName=" + guestName + ", \n passID=" + passID + ", \nluxuryRating=" + luxuryRating
+                + ", \n noOfCredits=" + noOfCredits + ", \n noOfPoints=" + noOfPoints + "";
     }
 
 }
