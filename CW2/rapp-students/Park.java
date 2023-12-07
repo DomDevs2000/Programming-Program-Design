@@ -20,7 +20,7 @@ public class Park implements RAPP {
      * @param nme - name of park
      */
     public Park(String nme) {
-        this.parkName = nme;
+        parkName = nme;
         loadZones();
         loadPasses();
         setUpBridges();
@@ -51,7 +51,7 @@ public class Park implements RAPP {
             }
         }
 
-        return "";
+        return "No such pass";
     }
 
     /**
@@ -73,8 +73,17 @@ public class Park implements RAPP {
      * @return id number of zone
      */
     public int getZoneNumber(String ww) {
+        Zone zone = getZone(ww);
+        int zoneNumber = zone.getZoneNumber();
+        return zoneNumber;
 
-        return 0;
+        // for (Zone zone : zones) {
+        // if (zone.getName().equals(ww)) {
+        // int zoneNumber = zone.getZoneNumber();
+        // return zoneNumber;
+        // }
+        // }
+        // return -1; // NOTE: remove
     }
 
     /**
@@ -140,7 +149,14 @@ public class Park implements RAPP {
      *              information
      */
     public void topUpCredits(int id, int creds) {
+        Pass pass = getPass(id);
+        pass.addCredits(creds);
 
+        // for (Pass pass : allPasses) {
+        // if (pass.getPassID() == id) {
+        // pass.addCredits(creds);
+        // }
+        // }
     }
 
     /**
@@ -149,7 +165,12 @@ public class Park implements RAPP {
      * @param cdId the id of the pass converting their credits
      */
     public void convertPoints(int cdId) {
-
+        for (Pass pass : allPasses) {
+            int passId = pass.getPassID();
+            if (passId == cdId) {
+                pass.pointsToCredits();
+            }
+        }
     }
 
     // ***************private methods**************
