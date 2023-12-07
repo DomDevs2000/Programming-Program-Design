@@ -7,18 +7,20 @@
  */
 public class PassTester {
     public static void main(String[] args) {
+        // Create pass object
         Pass pass = new Pass("Aidan", 10, 5, 15);
+        // call the accessor methods - save to variable
         int passId = pass.getPassID();
         int luxuryRating = pass.getLuxuryRating();
         int credits = pass.getNoOfCredits();
-        System.out.println(credits);
+        // print result
+
         // NOTE: flip variables and string
         System.out.println(passId + " expect passID of 10");
         System.out.println(luxuryRating + " expect luxury rating of 5");
         System.out.println(credits + " expect credits of 15");
         System.out.println(pass.toString());
-        // assert credits == 12 : "Connection is null";
-        pass.travel();
+        pass.deductCredits();
         System.out.println(pass.getNoOfCredits() + " expect credits of 11 after travel ");
     }
 
