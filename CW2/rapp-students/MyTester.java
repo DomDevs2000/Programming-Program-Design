@@ -49,14 +49,22 @@ public class MyTester {
         // Create 2 new zone objects for source and destination zones
         Zone lobby = new Zone("Lobby", 0, 0, 1000);
         Zone concourse = new Zone("Concourse", 1, 1, 100);
+
+        // Create 2 new passes 1 that can move to the next zone and one that cannot;
+        Pass passThatCanMoveZone = new Pass("John", 456, 5, 10);
+        Pass passThatCannotMoveZone = new Pass("Jane", 789, 1, 10);
         // Create bridge object
         Bridge bridge = new Bridge("ABC", lobby, concourse);
+
+        // call acccessor methods - save to variable
         bridge.toString();
         String bridgeCode = bridge.getBridgeCode();
         Zone sourceZone = bridge.getSourceZone();
         Zone destinationZone = bridge.getDestinationZone();
-
+        String bridgeAsString = bridge.toString();
+        // print expected and actual result
         System.out.println("********* Bridge Class Tests **********");
+
         System.out.println("Expect bridge code of ABC - result is: " + bridgeCode);
         System.out.println(
                 "Expect to return a zone obj with name: lobby, zoneNumber: 0, luxuryRating: 0, capacity: 1000 - result is: "
@@ -65,7 +73,18 @@ public class MyTester {
                 "Expect to return a zone obj with name: lobby, zoneNumber: 1, luxuryRating: 1, capacity: 100 - result is: "
                         + "\n" +
                         destinationZone);
-        System.out.println("Expected to return false" + bridge.canUseBridge(pass));
+        System.out.println("Expected to return a bridge obj - result is: \n" + bridgeAsString);
+        System.out.println("Expected to return true - result is: " + bridge.canUseBridge(passThatCanMoveZone));
+        System.out.println("Expected to return false - result is: " + bridge.canUseBridge(passThatCannotMoveZone));
+        // NOTE: a pass that can move with enough credits is being flagged as false -
+        // implementation of canMove() is wrong?
+
+        String zoneNotMoved = bridge.movePass(passThatCannotMoveZone);
+        String zoneMoved = bridge.movePass(passThatCanMoveZone);
+        System.out.println(zoneNotMoved);
+        System.out.println(zoneMoved);
+
+        // Park tests
 
     }
 
