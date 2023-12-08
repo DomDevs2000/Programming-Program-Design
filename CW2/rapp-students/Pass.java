@@ -57,7 +57,7 @@ public class Pass {
     }
 
     public String toString() {
-        return "Pass \n guestName=" + guestName + ", \n passID=" + passID + ", \nluxuryRating=" + luxuryRating
+        return "Pass \n guestName=" + guestName + ", \n passID=" + passID + ", \n luxuryRating=" + luxuryRating
                 + ", \n noOfCredits=" + noOfCredits + ", \n noOfPoints=" + noOfPoints + "";
     }
 
