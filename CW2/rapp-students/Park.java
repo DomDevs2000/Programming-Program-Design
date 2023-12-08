@@ -199,10 +199,10 @@ public class Park implements RAPP {
         allPasses.add(new Pass("Sol", 1007, 7, 20));
         allPasses.add(new Pass("Tel", 1008, 6, 24));
         // NOTE: need to add all passes to lobby
-        // NOTE: add more people with different credits and luxury rating
 
     }
 
+    // NOTE: private methods return null - for loop implementation issue
     /**
      * Returns the pass with the pass id specified by the parameter
      * 
