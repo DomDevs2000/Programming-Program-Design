@@ -189,7 +189,15 @@ public class Park implements RAPP {
     }
 
     private void loadPasses() {
-        allPasses.add(new Pass("John", 1, 3, 5));
+        allPasses.add(new Pass("Lynn", 1000, 5, 10));
+        allPasses.add(new Pass("May", 1001, 3, 20));
+        allPasses.add(new Pass("Nils", 1002, 10, 20));
+        allPasses.add(new Pass("Olek", 1003, 2, 12));
+        allPasses.add(new Pass("Pan", 1004, 3, 4));
+        allPasses.add(new Pass("Quin", 1005, 1, 5));
+        allPasses.add(new Pass("Raj", 1006, 10, 6));
+        allPasses.add(new Pass("Sol", 1007, 7, 20));
+        allPasses.add(new Pass("Tel", 1008, 6, 24));
         // NOTE: need to add all passes to lobby
         // NOTE: add more people with different credits and luxury rating
 
