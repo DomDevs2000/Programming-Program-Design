@@ -20,7 +20,6 @@ public class Zone {
     private int zoneNumber;
     private int luxuryRating;
     private int capacity;
-    private int noOfPeople;
 
     ArrayList<Pass> passes = new ArrayList<Pass>();
 
@@ -29,7 +28,6 @@ public class Zone {
         this.zoneNumber = zoneNumber;
         this.luxuryRating = luxuryRating;
         this.capacity = capacity;
-        this.noOfPeople = noOfPeople;
     }
 
     public int getZoneNumber() {
@@ -97,7 +95,7 @@ public class Zone {
 
     public String toString() {
         return "Zone [name=" + name + ", zoneNumber=" + zoneNumber + ", luxuryRating=" + luxuryRating + ", capacity="
-                + capacity + ", noOfPeople=" + noOfPeople + ", passes=" + listAllPasses() + "]";
+                + capacity + ", passes=" + listAllPasses() + "]";
     }
 
 }
