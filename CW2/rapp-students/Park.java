@@ -30,7 +30,6 @@ public class Park implements RAPP {
      * Returns all of the details of the park: its name and its zones
      * including lists of passes in each zone.
      */
-    @Override
     public String toString() {
 
         return "Park [parkName=" + parkName + ", allPasses=" + allPasses + ", zones=" + zones + ", bridges=" + bridges
@@ -45,13 +44,13 @@ public class Park implements RAPP {
      * @return the details of the pass as a String, or "No such pass"
      */
     public String getPassDetails(int passId) {
-        for (Pass pass : allPasses) {
-            if (pass.getPassID() == passId) {
-                return pass.toString();
-            }
-        }
+        Pass pass = getPass(passId);
 
-        return "No such pass";
+        if (pass.getPassID() == passId) {
+            return pass.toString();
+        } else {
+            return "No such pass";
+        }
     }
 
     /**
@@ -75,15 +74,10 @@ public class Park implements RAPP {
     public int getZoneNumber(String ww) {
         Zone zone = getZone(ww);
         int zoneNumber = zone.getZoneNumber();
-        return zoneNumber;
-
-        // for (Zone zone : zones) {
-        // if (zone.getName().equals(ww)) {
-        // int zoneNumber = zone.getZoneNumber();
-        // return zoneNumber;
-        // }
-        // }
-        // return -1; // NOTE: remove
+        if (zoneNumber >= 0) {
+            return zoneNumber;
+        }
+        return -1;
     }
 
     /**
@@ -93,8 +87,8 @@ public class Park implements RAPP {
      * @return a String representation of all passes on specified zone
      **/
     public String getAllPassesInOneZone(String zone) {
-
-        return "";
+        Zone zone1 = getZone(zone);
+        return zone1.listAllPasses();
     }
 
     /**
