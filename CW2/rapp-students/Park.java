@@ -175,11 +175,11 @@ public class Park implements RAPP {
 
     // ***************private methods**************
     private void loadZones() {
-        zones.add(new Zone("Lobby", 0, 0, 1000, 10));
-        zones.add(new Zone("Concorse", 1, 3, 100, 50));
-        zones.add(new Zone("WaterWorld", 2, 3, 10, 3));
-        zones.add(new Zone("WildWest", 3, 5, 2, 0));
-        zones.add(new Zone("Solitaire", 4, 1, 1, 1));
+        zones.add(new Zone("Lobby", 0, 0, 1000));
+        zones.add(new Zone("Concorse", 1, 3, 100));
+        zones.add(new Zone("WaterWorld", 2, 3, 10));
+        zones.add(new Zone("WildWest", 3, 5, 2));
+        zones.add(new Zone("Solitaire", 4, 1, 1));
 
     }
 
