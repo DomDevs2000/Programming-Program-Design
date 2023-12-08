@@ -9,11 +9,11 @@ public class Teamwork {
     private String[] details = new String[6];
 
     public Teamwork() { // In each line replace the contents of the String
-                        // with the details of your team
-                        // It will help us if the surname of programmer1 comes
-                        // alphabetically before the surname of programmer2
-                        // If there is only 1 team member, please complete details
-                        // for programmer1
+        // with the details of your team
+        // It will help us if the surname of programmer1 comes
+        // alphabetically before the surname of programmer2
+        // If there is only 1 team member, please complete details
+        // for programmer1
 
         details[0] = "Carvalho";
         details[1] = "Aidan";

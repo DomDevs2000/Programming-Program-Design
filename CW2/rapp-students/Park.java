@@ -33,7 +33,7 @@ public class Park implements RAPP {
     public String toString() {
 
         return "Park [parkName=" + parkName + ", allPasses=" + allPasses + ", zones=" + zones + ", bridges=" + bridges
-                + "]";
+        + "]";
 
     }
 

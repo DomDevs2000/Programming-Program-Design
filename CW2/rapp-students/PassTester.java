@@ -20,8 +20,8 @@ public class PassTester {
         System.out.println("Expect luxury rating of 5 - result is: " + luxuryRating);
         System.out.println("Expect credits to be 15 -  result is:  " + credits);
         System.out.println(
-                "Expect pass object with name: Aidan, passId: 10, luxuryRating: 5, noOfcredits: 15, noOfPoints: 0 - \n result is: "
-                        + passAsString);
+            "Expect pass object with name: Aidan, passId: 10, luxuryRating: 5, noOfcredits: 15, noOfPoints: 0 - \n result is: "
+            + passAsString);
 
         pass.deductCredits();
         System.out.println("Expect credits of 11 after travel - result is:  " + pass.getNoOfCredits());
