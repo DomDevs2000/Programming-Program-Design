@@ -23,18 +23,19 @@ public class MyTester {
         int zoneNumber = zone.getZoneNumber();
         String zoneName = zone.getName();
         int zoneLuxuryRating = zone.getLuxuryRating();
-        String zoneAsString = zone.toString();
 
         zone.enter(pass);
         zone.enter(pass2);
+
+        String zoneAsString = zone.toString();
         // print out
         System.out.println("********* Zone Class Tests **********");
         System.out.println("Zone Number Is: " + zoneNumber + " - expected to be - 0");
         System.out.println("Zone Name Is: " + zoneName + " - expected to be - Lobby");
         System.out.println("Zone Luxury Rating Is: " + zoneLuxuryRating + " expected to be -  0");
         System.out.println(zone.listAllPasses() + "expected to be 2 pass objects");
-        System.out.println("Zone Object As A String Is: " + zoneAsString); // NOTE: passes field is empty after
-                                                                           // zone.enter -- listAllPasses() in zone obj
+        System.out.println("Zone Object As A String Is: " + zoneAsString);
+
         // test to find pass details by pass id
         System.out.println(zone.findPassDetails(123) + " Expected to return Pass obj with passID of 123");
         System.out.println(zone.findPassDetails(321) + " Expected to return Pass obj with passID of 321");
