@@ -12,6 +12,9 @@ public class Park implements RAPP {
     private ArrayList<Pass> allPasses = new ArrayList<Pass>();
     private ArrayList<Zone> zones = new ArrayList<Zone>();
     private ArrayList<Bridge> bridges = new ArrayList<Bridge>();
+
+    // NOTE: lobbyZone.enter(pass)
+    //
     // complete this section by adding other required fields
 
     /**
@@ -33,7 +36,7 @@ public class Park implements RAPP {
     public String toString() {
 
         return "Park [parkName=" + parkName + ", allPasses=" + allPasses + ", zones=" + zones + ", bridges=" + bridges
-        + "]";
+                + "]";
 
     }
 
@@ -106,6 +109,15 @@ public class Park implements RAPP {
      * @return true if the pass is allowed on the bridge journey, false otherwise
      **/
     public boolean canMove(int trId, String znCode) {
+        Pass pass = getPass(trId);
+        Bridge bridge = getBridge(znCode);
+
+        if (pass != null && bridge != null) {
+            Zone sourceZone = bridge.getSourceZone();
+            boolean isPassInZone = sourceZone.isPassInZone(pass);
+            boolean canUseBridge = bridge.canUseBridge(pass);
+            return (isPassInZone && canUseBridge);
+        }
 
         return false;
     }
@@ -131,7 +143,17 @@ public class Park implements RAPP {
      * @return a String giving the result of the request
      **/
     public String move(int pPassId, String znCode) {
-        return "";
+        Pass pass = getPass(pPassId);
+
+        if (canMove(pPassId, znCode)) {
+            Bridge bridge = getBridge(znCode);
+
+            if (bridge != null) {
+                bridge.movePass(pass);
+                return "Pass of Id " + pass.getPassID() + " moved across bridge: " + bridge.getBridgeCode();
+            }
+        }
+        return "Pass of Id " + pass.getPassID() + " could not move across bridge";
     }
 
     /**
@@ -146,11 +168,6 @@ public class Park implements RAPP {
         Pass pass = getPass(id);
         pass.addCredits(creds);
 
-        // for (Pass pass : allPasses) {
-        // if (pass.getPassID() == id) {
-        // pass.addCredits(creds);
-        // }
-        // }
     }
 
     /**
@@ -189,6 +206,17 @@ public class Park implements RAPP {
     }
 
     private void loadPasses() {
+        // get lobby zone (0)
+        // zone.enter each pass through loop
+        //
+        // Pass[] passes = {new Pass("Lynn", 1000, 5, 10)};
+        // for (Pass pass : passes) {
+        //
+        // allPasses.add(pass);
+        // lobbyZone.enter(pass);
+        //
+        // }
+        // zone.enter(pass);
         allPasses.add(new Pass("Lynn", 1000, 5, 10));
         allPasses.add(new Pass("May", 1001, 3, 20));
         allPasses.add(new Pass("Nils", 1002, 10, 20));
@@ -202,7 +230,6 @@ public class Park implements RAPP {
 
     }
 
-    // NOTE: private methods return null - for loop implementation issue
     /**
      * Returns the pass with the pass id specified by the parameter
      * 

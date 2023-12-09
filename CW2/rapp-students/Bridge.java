@@ -33,11 +33,11 @@ public class Bridge {
     public boolean canUseBridge(Pass pass) {
         int passLuxuryRating = pass.getLuxuryRating();
         int destinationZoneLuxuryRating = destinationZone.getLuxuryRating();
-        if (!destinationZone.isFull() && destinationZoneLuxuryRating >= passLuxuryRating && pass.isEnoughCredits()) {
+
+        if (!destinationZone.isFull() && passLuxuryRating >= destinationZoneLuxuryRating && pass.isEnoughCredits()) {
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
     public String movePass(Pass pass) {
@@ -54,7 +54,7 @@ public class Bridge {
 
     public String toString() {
         return "Bridge [sourceZone=" + sourceZone + "," + sourceZone.getZoneNumber() + ", destinationZone="
-        + destinationZone + "," + destinationZone.getZoneNumber() + "]";
+                + destinationZone + "," + destinationZone.getZoneNumber() + "]";
     }
 
 }

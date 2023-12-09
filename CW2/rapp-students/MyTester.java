@@ -53,7 +53,7 @@ public class MyTester {
 
         // Create 2 new passes 1 that can move to the next zone and one that cannot;
         Pass passThatCanMoveZone = new Pass("John", 456, 5, 10);
-        Pass passThatCannotMoveZone = new Pass("Jane", 789, 1, 10);
+        Pass passThatCannotMoveZone = new Pass("Jane", 789, 0, 10);
         // Create bridge object
         Bridge bridge = new Bridge("ABC", lobby, concourse);
 
