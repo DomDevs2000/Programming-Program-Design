@@ -90,8 +90,8 @@ public class Park implements RAPP {
      * @return a String representation of all passes on specified zone
      **/
     public String getAllPassesInOneZone(String zone) {
-        Zone zone1 = getZone(zone);
-        return zone1.listAllPasses();
+        Zone requestedZone = getZone(zone);
+        return requestedZone.listAllPasses();
     }
 
     /**
@@ -150,10 +150,10 @@ public class Park implements RAPP {
 
             if (bridge != null) {
                 bridge.movePass(pass);
-                return "Pass of Id " + pass.getPassID() + " moved across bridge: " + bridge.getBridgeCode();
+                return "Pass with ID " + pass.getPassID() + " moved across bridge: " + bridge.getBridgeCode();
             }
         }
-        return "Pass of Id " + pass.getPassID() + " could not move across bridge";
+        return "Pass with ID " + pass.getPassID() + " could not move across bridge";
     }
 
     /**
