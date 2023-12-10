@@ -54,13 +54,6 @@ public class Zone {
             passes.remove(position);
         }
     }
-    // NOTE: example implemntation
-    // public void leave(int passId) {
-    // Pass position = findPassDetails(passId);
-    // if (position != null) {
-    // passes.remove(position);
-    // }
-    // }
 
     public boolean isFull() {
         if (passes.size() >= capacity) {
