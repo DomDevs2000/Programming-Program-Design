@@ -100,10 +100,11 @@ public class ParkUI {
     private void updateCredits() {
         System.out.println("Enter pass id");
         int passId = reader.nextInt();
-        System.out.println("Enter number of Credits to top up");
+        System.out.println("Enter number of credits to top up");
         int credits = reader.nextInt();
 
         fantasia.topUpCredits(passId, credits);
+        System.out.println("Credits topped up");
 
     }
 
