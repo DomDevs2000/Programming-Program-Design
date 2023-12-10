@@ -77,13 +77,12 @@ public class MyTester {
         System.out.println("Expected to return a bridge obj - result is: \n" + bridgeAsString);
         System.out.println("Expected to return true - result is: " + bridge.canUseBridge(passThatCanMoveZone));
         System.out.println("Expected to return false - result is: " + bridge.canUseBridge(passThatCannotMoveZone));
-        // NOTE: a pass that can move with enough credits is being flagged as false -
-        // implementation of canMove() is wrong?
 
-        String zoneNotMoved = bridge.movePass(passThatCannotMoveZone);
         String zoneMoved = bridge.movePass(passThatCanMoveZone);
-        System.out.println(zoneNotMoved);
+        String zoneNotMoved = bridge.movePass(passThatCannotMoveZone);
+
         System.out.println(zoneMoved);
+        System.out.println(zoneNotMoved);
 
         // Park tests
 
