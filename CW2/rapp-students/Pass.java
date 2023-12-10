@@ -13,9 +13,9 @@ public class Pass {
     private int noOfPoints;
 
     // NOTE: swap id and name
-    public Pass(String guestName, int passID, int luxuryRating, int noOfCredits) {
-        this.guestName = guestName;
+    public Pass(int passID, String guestName, int luxuryRating, int noOfCredits) {
         this.passID = passID;
+        this.guestName = guestName;
         this.luxuryRating = luxuryRating; // NOTE: VALIDATE rating is 1-10
         this.noOfCredits = noOfCredits;
         this.noOfPoints = 0;

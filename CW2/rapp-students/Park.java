@@ -218,19 +218,19 @@ public class Park implements RAPP {
 
     private void loadPasses() {
 
-        allPasses.add(new Pass("Lynn", 1000, 5, 10));
-        allPasses.add(new Pass("May", 1001, 3, 20));
-        allPasses.add(new Pass("Nils", 1002, 10, 20));
-        allPasses.add(new Pass("Olek", 1003, 2, 12));
-        allPasses.add(new Pass("Pan", 1004, 3, 4));
-        allPasses.add(new Pass("Quin", 1005, 1, 5));
-        allPasses.add(new Pass("Raj", 1006, 10, 6));
-        allPasses.add(new Pass("Sol", 1007, 7, 20));
-        allPasses.add(new Pass("Tel", 1008, 6, 24));
+        allPasses.add(new Pass(1000, "Lynn", 5, 10));
+        allPasses.add(new Pass(1001, "May", 3, 20));
+        allPasses.add(new Pass(1002, "Nils", 10, 20));
+        allPasses.add(new Pass(1003, "Olek", 2, 12));
+        allPasses.add(new Pass(1004, "Pan", 3, 4));
+        allPasses.add(new Pass(1005, "Quin", 1, 5));
+        allPasses.add(new Pass(1006, "Raj", 10, 6));
+        allPasses.add(new Pass(1007, "Sol", 7, 20));
+        allPasses.add(new Pass(1008, "Tel", 6, 24));
         // Task 7
-        allPasses.add(new TouristPass("Una", 1009, 5, 20, "TUI", 12345));
-        allPasses.add(new ChildPass("Val", 1010, 10, 0, 999));
-        allPasses.add(new BusinessPass("Wei", 1011, 5, 20, "Next"));
+        allPasses.add(new TouristPass(1009, "Una", 5, 20, "TUI", 12345));
+        allPasses.add(new ChildPass(1010, "Val", 10, 0, 999));
+        allPasses.add(new BusinessPass(1011, "Wei", 5, 20, "Next"));
 
     }
 

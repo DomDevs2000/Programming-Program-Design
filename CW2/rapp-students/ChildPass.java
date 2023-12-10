@@ -3,8 +3,8 @@ public class ChildPass extends Pass {
     private int parentPassNumber;
     private int zonesVisited;
 
-    public ChildPass(String guestName, int passID, int luxuryRating, int noOfCredits, int parentPassNumber) {
-        super(guestName, passID, 10, noOfCredits);
+    public ChildPass(int passID, String guestName, int luxuryRating, int noOfCredits, int parentPassNumber) {
+        super(passID, guestName, 10, noOfCredits);
         this.parentPassNumber = parentPassNumber;
         this.zonesVisited = 0;
     }

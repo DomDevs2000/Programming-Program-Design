@@ -17,8 +17,8 @@ public class MyTester {
         // Create zone object
         Zone zone = new Zone("Lobby", 0, 0, 1000);
         // create 2 different pass objects to be used in the zone
-        Pass pass = new Pass("Aidan", 123, 3, 10);
-        Pass pass2 = new Pass("Dom", 321, 3, 10);
+        Pass pass = new Pass(123, "Aidan", 3, 10);
+        Pass pass2 = new Pass(321, "Dom", 3, 10);
 
         // acccess fields of zone object object to be used in all tests
         int zoneNumber = zone.getZoneNumber();
@@ -58,8 +58,8 @@ public class MyTester {
         Zone concourse = new Zone("Concourse", 1, 1, 100);
 
         // Create 2 new passes 1 that can move to the next zone and one that cannot;
-        Pass passThatCanMoveZone = new Pass("John", 456, 5, 10);
-        Pass passThatCannotMoveZone = new Pass("Jane", 789, 0, 10);
+        Pass passThatCanMoveZone = new Pass(456, "John", 5, 10);
+        Pass passThatCannotMoveZone = new Pass(789, "Jane", 0, 10);
 
         // Create bridge object
         Bridge bridge = new Bridge("ABC", lobby, concourse);
@@ -101,7 +101,7 @@ public class MyTester {
         System.out.println("********** Park Class Tests *************");
 
         // Create a new Pass object which exists in the park
-        Pass passInPark = new Pass("Mick", 1001, 3, 10);
+        Pass passInPark = new Pass(1001, "Mick", 3, 10);
         int passInParkId = passInPark.getPassID();
 
         System.out.println(fantasia.getPassLocation(passInParkId));

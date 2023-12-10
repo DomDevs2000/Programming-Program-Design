@@ -4,9 +4,9 @@ public class TouristPass extends Pass {
     private String tourOperatorName;
     private int operatorId;
 
-    public TouristPass(String guestName, int passID, int luxuryRating, int noOfCredits, String tourOperatorName,
+    public TouristPass(int passID, String guestName, int luxuryRating, int noOfCredits, String tourOperatorName,
             int operatorId) {
-        super(guestName, passID, luxuryRating, noOfCredits);
+        super(passID, guestName, luxuryRating, noOfCredits);
         this.tourOperatorName = tourOperatorName;
         this.operatorId = operatorId;
     }

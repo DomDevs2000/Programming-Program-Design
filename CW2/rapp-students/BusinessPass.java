@@ -2,8 +2,8 @@
 public class BusinessPass extends Pass {
     private String organizationName;
 
-    public BusinessPass(String guestName, int passID, int luxuryRating, int noOfCredits, String organizationName) {
-        super(guestName, passID, luxuryRating, 30);
+    public BusinessPass(int passID, String guestName, int luxuryRating, int noOfCredits, String organizationName) {
+        super(passID, guestName, luxuryRating, 30);
         this.organizationName = organizationName;
     }
 
