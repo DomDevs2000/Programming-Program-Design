@@ -13,6 +13,16 @@ public class TouristPass extends Pass {
 
     @Override
     public String toString() {
-        return "TouristPass [tourOperatorName=" + tourOperatorName + ", operatorId=" + operatorId + "]";
+        return "TouristPass [tourOperatorName=" + tourOperatorName + ", \n operatorId=" + operatorId
+                + " \n luxuryRating "
+                + getLuxuryRating() + "\n credits" + +getNoOfCredits() + "\n noOfPoints" + getNoOfPoints() + "]";
+    }
+
+    public String getTourOperatorName() {
+        return tourOperatorName;
+    }
+
+    public int getOperatorId() {
+        return operatorId;
     }
 }

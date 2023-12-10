@@ -12,6 +12,7 @@ public class Pass {
     private int noOfCredits;
     private int noOfPoints;
 
+    // NOTE: swap id and name
     public Pass(String guestName, int passID, int luxuryRating, int noOfCredits) {
         this.guestName = guestName;
         this.passID = passID;
@@ -32,6 +33,14 @@ public class Pass {
         return noOfCredits;
     }
 
+    public String getGuestName() {
+        return guestName;
+    }
+
+    public int getNoOfPoints() {
+        return noOfPoints;
+    }
+
     public boolean isEnoughCredits() {
         if (noOfCredits >= 4) {
             return true;
@@ -41,7 +50,7 @@ public class Pass {
     }
 
     public void addCredits(int credits) {
-        noOfCredits += noOfCredits + credits;
+        noOfCredits += credits;
     }
 
     public void deductCredits() {
@@ -56,9 +65,22 @@ public class Pass {
         return noOfCredits = convertedPoints;
     }
 
+    // Mutator methods for inherited classes
+    public void setLuxuryRating(int luxuryRating) {
+        this.luxuryRating = luxuryRating;
+    }
+
+    public void setNoOfCredits(int noOfCredits) {
+        this.noOfCredits = noOfCredits;
+    }
+
+    public void setNoOfPoints(int noOfPoints) {
+        this.noOfPoints = noOfPoints;
+    }
+
     public String toString() {
         return "Pass \n guestName=" + guestName + ", \n passID=" + passID + ", \n luxuryRating=" + luxuryRating
-        + ", \n noOfCredits=" + noOfCredits + ", \n noOfPoints=" + noOfPoints + "";
+                + ", \n noOfCredits=" + noOfCredits + ", \n noOfPoints=" + noOfPoints + "";
     }
 
 }

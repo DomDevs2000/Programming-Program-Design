@@ -66,11 +66,16 @@ public class ParkUI {
 
     // provide the code here
     private void listAllPasses() {
-
+        String[] zoneNames = { "Lobby", "Concourse", "Waterworld", "WildWest", "Solitaire" };
+        for (String zoneName : zoneNames) {
+            System.out.println(zoneName);
+            System.out.println(fantasia.getAllPassesInOneZone(zoneName));
+        }
     }
 
     // This one has been done for you
     private void listOneZone() {
+        // NOTE: validate lowercase
         System.out.println("Enter name of zone");
         String ww = reader.nextLine();
         System.out.println(fantasia.getAllPassesInOneZone(ww));
@@ -78,6 +83,11 @@ public class ParkUI {
 
     // provide the code here
     private void findPassLocation() {
+        System.out.println("Enter pass id");
+        int passId = reader.nextInt();
+        System.out
+                .println("Pass with Id " + passId + " is currently in the " + fantasia.getPassLocation(passId)
+                        + " zone");
 
     }
 
@@ -93,6 +103,12 @@ public class ParkUI {
 
     // Provide the code here
     private void moveNow() {
+        System.out.println("Enter pass id");
+        int trav = reader.nextInt();
+        reader.nextLine();
+        System.out.println("Enter bridge code");
+        String bridge = reader.nextLine();
+        System.out.println(fantasia.move(trav, bridge));
 
     }
 

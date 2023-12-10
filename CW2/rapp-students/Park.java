@@ -13,8 +13,6 @@ public class Park implements RAPP {
     private ArrayList<Zone> zones = new ArrayList<Zone>();
     private ArrayList<Bridge> bridges = new ArrayList<Bridge>();
 
-    // NOTE: lobbyZone.enter(pass)
-    //
     // complete this section by adding other required fields
 
     /**
@@ -27,6 +25,13 @@ public class Park implements RAPP {
         loadZones();
         loadPasses();
         setUpBridges();
+
+        Zone lobby = getZone("Lobby");
+        for (Pass pass : allPasses) {
+            lobby.enter(pass);
+
+        }
+
     }
 
     /**
@@ -35,8 +40,7 @@ public class Park implements RAPP {
      */
     public String toString() {
 
-        return "Park [parkName=" + parkName + ", allPasses=" + allPasses + ", zones=" + zones + ", bridges=" + bridges
-                + "]";
+        return "Park [parkName=" + parkName + ", zones=" + zones + "]";
 
     }
 
@@ -63,6 +67,14 @@ public class Park implements RAPP {
      * @return the name of the Zone which contains the pass, or null
      **/
     public String getPassLocation(int cd) {
+        Pass pass = getPass(cd);
+        for (Zone zone : zones) {
+            if (zone.isPassInZone(pass)) {
+                String zoneName = zone.getName();
+                return zoneName;
+            }
+            return null;
+        }
 
         return null;
     }
@@ -167,7 +179,6 @@ public class Park implements RAPP {
     public void topUpCredits(int id, int creds) {
         Pass pass = getPass(id);
         pass.addCredits(creds);
-
     }
 
     /**
@@ -187,8 +198,8 @@ public class Park implements RAPP {
     // ***************private methods**************
     private void loadZones() {
         zones.add(new Zone("Lobby", 0, 0, 1000));
-        zones.add(new Zone("Concorse", 1, 3, 100));
-        zones.add(new Zone("WaterWorld", 2, 3, 10));
+        zones.add(new Zone("Concourse", 1, 3, 100));
+        zones.add(new Zone("Waterworld", 2, 3, 10));
         zones.add(new Zone("WildWest", 3, 5, 2));
         zones.add(new Zone("Solitaire", 4, 1, 1));
 
@@ -206,17 +217,7 @@ public class Park implements RAPP {
     }
 
     private void loadPasses() {
-        // get lobby zone (0)
-        // zone.enter each pass through loop
-        //
-        // Pass[] passes = {new Pass("Lynn", 1000, 5, 10)};
-        // for (Pass pass : passes) {
-        //
-        // allPasses.add(pass);
-        // lobbyZone.enter(pass);
-        //
-        // }
-        // zone.enter(pass);
+
         allPasses.add(new Pass("Lynn", 1000, 5, 10));
         allPasses.add(new Pass("May", 1001, 3, 20));
         allPasses.add(new Pass("Nils", 1002, 10, 20));
@@ -226,7 +227,10 @@ public class Park implements RAPP {
         allPasses.add(new Pass("Raj", 1006, 10, 6));
         allPasses.add(new Pass("Sol", 1007, 7, 20));
         allPasses.add(new Pass("Tel", 1008, 6, 24));
-        // NOTE: need to add all passes to lobby
+        // Task 7
+        allPasses.add(new TouristPass("Una", 1009, 5, 20, "TUI", 12345));
+        allPasses.add(new ChildPass("Val", 1010, 10, 0, 999));
+        allPasses.add(new BusinessPass("Wei", 1011, 5, 20, "Next"));
 
     }
 
