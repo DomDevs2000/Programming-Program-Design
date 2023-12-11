@@ -3,6 +3,8 @@ import java.util.*;
 
 /**
  * Write a description of class ParkUI here.
+ * Class that displays information of the Park and allows users to view their
+ * passes and update their credits
  * 
  * @author Aidan Carvalho
  * @version 11/12/2023

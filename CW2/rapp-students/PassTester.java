@@ -1,6 +1,7 @@
 
 /**
  * Write a description of class PassTester here.
+ * Tester Class to test methods on the Pass class
  *
  * @author Aidan Carvalho
  * @version 11/12/2023
