@@ -3,8 +3,8 @@ import java.util.*;
 /**
  * Write a description of class MyTester here.
  * 
- * @author
- * @version
+ * @author (Aidan Carvalho)
+ * @version (11/12/2023)
  */
 public class MyTester {
 

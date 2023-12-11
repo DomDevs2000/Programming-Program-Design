@@ -4,8 +4,8 @@ import java.util.*;
 /**
  * This class implements the RAPP interface
  *
- * @author A.A.Marczyk
- * @version 15/10/23
+ * @author Aidan Carvalho
+ * @version 11/12/23
  **/
 public class Park implements RAPP {
     private String parkName;

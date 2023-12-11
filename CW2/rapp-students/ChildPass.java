@@ -1,4 +1,8 @@
-
+/**
+ * 
+ * @author (Aidan Carvalho)
+ * @version (11/12/2023)
+ */
 public class ChildPass extends Pass {
     private int parentPassNumber;
     private int zonesVisited;

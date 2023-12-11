@@ -1,3 +1,7 @@
+/**
+ * @author Aidan Carvalho
+ * @version 11/12/2023
+ */
 
 public class TouristPass extends Pass {
 

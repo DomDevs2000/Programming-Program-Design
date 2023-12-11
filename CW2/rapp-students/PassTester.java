@@ -2,8 +2,8 @@
 /**
  * Write a description of class PassTester here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Aidan Carvalho
+ * @version 11/12/2023
  */
 public class PassTester {
     public static void main(String[] args) {

@@ -2,8 +2,8 @@
 /**
  * A Pass has an id number, name, a luxury rating, number of credits and points.
  * 
- * @author (your name)
- * @version (a version number or a date)
+ * @author Aidan Carvalho
+ * @version 11/12/2023
  */
 public class Pass {
     private String guestName;
@@ -12,11 +12,10 @@ public class Pass {
     private int noOfCredits;
     private int noOfPoints;
 
-    // NOTE: swap id and name
     public Pass(int passID, String guestName, int luxuryRating, int noOfCredits) {
         this.passID = passID;
         this.guestName = guestName;
-        this.luxuryRating = luxuryRating; // NOTE: VALIDATE rating is 1-10
+        this.luxuryRating = luxuryRating;
         this.noOfCredits = noOfCredits;
         this.noOfPoints = 0;
     }

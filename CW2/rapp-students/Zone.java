@@ -11,8 +11,8 @@ import java.util.*;
  * the zone
  * and who they are.
  * 
- * @author (your name)
- * @version (a version number or a date)
+ * @author Aidan Carvalho
+ * @version 11/12/2023
  */
 
 public class Zone {
