@@ -60,8 +60,8 @@ public class Pass {
     }
 
     public int pointsToCredits() {
-        int convertedPoints = noOfPoints / 3;
-        return noOfCredits = convertedPoints;
+        int convertedPoints = noOfCredits / 3;
+        return noOfPoints = convertedPoints;
     }
 
     // Mutator methods for inherited classes
