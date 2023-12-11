@@ -83,11 +83,11 @@ public class MyTester {
 
         System.out.println("Expect bridge code of ABC - result is: " + bridgeCode);
         System.out.println(
-                "Expect to return a zone with name lobby and id of 0 - actual result is: "
-                        + "\n Zone Name: " + sourceZoneName + "\n Zone Number: " + sourceZoneNumber);
+            "Expect to return a zone with name lobby and id of 0 - actual result is: "
+            + "\n Zone Name: " + sourceZoneName + "\n Zone Number: " + sourceZoneNumber);
         System.out.println(
-                "Expect to return a zone with name Concourse and id of 1 - actual result is: "
-                        + "\n Zone Name: " + destinationZoneName + "\n Zone Number: " + destinationZoneNumber);
+            "Expect to return a zone with name Concourse and id of 1 - actual result is: "
+            + "\n Zone Name: " + destinationZoneName + "\n Zone Number: " + destinationZoneNumber);
         System.out.println("Expected to return a bridge obj - result is: \n" + bridgeAsString);
         System.out.println("Expected to return true - result is: " + bridge.canUseBridge(passThatCanMoveZone));
         System.out.println("Expected to return false - result is: " + bridge.canUseBridge(passThatCannotMoveZone));
@@ -107,9 +107,10 @@ public class MyTester {
         // Test to get the current zone of the pass - should return Lobby
         System.out.println(fantasia.getPassLocation(1001));
         // Test to return true or false whether the pass can move
-        System.out.println("Expected result true: " + fantasia.canMove(1001, "ABC1"));
+        System.out.println("Expected result  = true: " + fantasia.canMove(1001, "ABC1"));
 
-        System.out.println("Expected result = String saying Pass with ID has moved across bridge: " + fantasia.move(1001, "ABC1"));
+        System.out.println(
+            "Expected result = String saying Pass with ID has moved across bridge: " + fantasia.move(1001, "ABC1"));
 
         // Test to check top up credit method
         System.out.println("Expected to top up credits by 10");
