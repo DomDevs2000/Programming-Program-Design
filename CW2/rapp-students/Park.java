@@ -161,7 +161,7 @@ public class Park implements RAPP {
         if (canMove(pPassId, znCode)) {
             Bridge bridge = getBridge(znCode);
 
-            if (bridge != null) {
+            if (bridge.canUseBridge(pass)) {
                 bridge.movePass(pass);
                 return "Pass with ID " + pass.getPassID() + " moved across bridge: " + bridge.getBridgeCode();
             }

@@ -77,7 +77,7 @@ public class ParkUI {
 
     // This one has been done for you
     private void listOneZone() {
-        // NOTE: validate lowercase
+
         System.out.println("Enter name of zone");
         String ww = reader.nextLine();
         System.out.println(fantasia.getAllPassesInOneZone(ww));
@@ -88,8 +88,8 @@ public class ParkUI {
         System.out.println("Enter pass id");
         int passId = reader.nextInt();
         System.out
-        .println("Pass with Id " + passId + " is currently in the " + fantasia.getPassLocation(passId)
-            + " zone");
+                .println("Pass with Id " + passId + " is currently in the " + fantasia.getPassLocation(passId)
+                        + " zone");
 
     }
 

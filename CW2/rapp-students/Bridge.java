@@ -45,7 +45,6 @@ public class Bridge {
             sourceZone.leave(pass);
             destinationZone.enter(pass);
             pass.deductCredits();
-            // NOTE: rename zone moved to mved across bridge etc
             return "Zone Moved - Credits deducted";
         } else {
             return "Zone not moved - credits not deducted";
@@ -54,7 +53,7 @@ public class Bridge {
 
     public String toString() {
         return "Bridge [sourceZone=" + sourceZone + "," + sourceZone.getZoneNumber() + ", destinationZone="
-        + destinationZone + "," + destinationZone.getZoneNumber() + "]";
+                + destinationZone + "," + destinationZone.getZoneNumber() + "]";
     }
 
 }

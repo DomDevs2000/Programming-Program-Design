@@ -107,9 +107,9 @@ public class MyTester {
         // Test to get the current zone of the pass - should return Lobby
         System.out.println(fantasia.getPassLocation(1001));
         // Test to return true or false whether the pass can move
-        System.out.println(fantasia.canMove(1001, "ABC1"));
+        System.out.println("Expected result true: " + fantasia.canMove(1001, "ABC1"));
 
-        System.out.println(fantasia.move(1001, "ABC1"));
+        System.out.println("Expected result = String saying Pass with ID has moved across bridge: " + fantasia.move(1001, "ABC1"));
 
         // Test to check top up credit method
         System.out.println("Expected to top up credits by 10");
