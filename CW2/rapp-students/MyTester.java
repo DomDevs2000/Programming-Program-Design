@@ -99,20 +99,27 @@ public class MyTester {
 
         // Park tests
         System.out.println("********** Park Class Tests *************");
+        // Test that returns all the zones in the park, and all passes in zones:
+        // all passes should currelty be in the lobby zone
+        System.out.println(fantasia.toString());
 
-        // Create a new Pass object which exists in the park
-        Pass passInPark = new Pass(1001, "Mick", 3, 10);
-        int passInParkId = passInPark.getPassID();
+        // Test to get the current zone of the pass - should return Lobby
+        System.out.println(fantasia.getPassLocation(1011));
+        // Test to return true or false whether the pass can move
+        System.out.println(fantasia.canMove(1011, "Lobby"));
 
-        System.out.println(fantasia.getPassLocation(passInParkId));
-        System.out.println(fantasia.canMove(passInParkId, "Concourse"));
+        System.out.println(fantasia.move(1003, "Concourse"));
 
         // Test to check top up credit method
         System.out.println("Expected to top up credits by 10");
-        fantasia.topUpCredits(passInParkId, 10);
-        int credits = passInPark.getNoOfCredits();
-        System.out.println("Expected Number of credits on pass to be 20 - actual result is: " + credits); // NOTE: creds
-                                                                                                          // not adding
+        fantasia.topUpCredits(1001, 10);
+        // Expect pass obj to have noOfCredits = 30
+        System.out.println(fantasia.getPassDetails(1001));
+        // Convert current credits to points
+        fantasia.convertPoints(1001);
+        // should return noOfPoints = 10
+        System.out.println(fantasia.getPassDetails(1001));
+
     }
 
     public static void main(String[] args) {
