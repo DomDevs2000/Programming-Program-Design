@@ -155,6 +155,7 @@ public class Park implements RAPP {
      * @return a String giving the result of the request
      **/
     public String move(int pPassId, String znCode) {
+
         Pass pass = getPass(pPassId);
 
         if (canMove(pPassId, znCode)) {
@@ -187,12 +188,9 @@ public class Park implements RAPP {
      * @param cdId the id of the pass converting their credits
      */
     public void convertPoints(int cdId) {
-        for (Pass pass : allPasses) {
-            int passId = pass.getPassID();
-            if (passId == cdId) {
-                pass.pointsToCredits();
-            }
-        }
+        Pass pass = getPass(cdId);
+
+        pass.pointsToCredits();
     }
 
     // ***************private methods**************
