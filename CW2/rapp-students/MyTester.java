@@ -2,6 +2,7 @@ import java.util.*;
 
 /**
  * Write a description of class MyTester here.
+ * Tester class that tests the Zone, Bridge and Park classes and their methods
  * 
  * @author (Aidan Carvalho)
  * @version (11/12/2023)
@@ -104,11 +105,11 @@ public class MyTester {
         System.out.println(fantasia.toString());
 
         // Test to get the current zone of the pass - should return Lobby
-        System.out.println(fantasia.getPassLocation(1011));
+        System.out.println(fantasia.getPassLocation(1001));
         // Test to return true or false whether the pass can move
-        System.out.println(fantasia.canMove(1011, "Lobby"));
+        System.out.println(fantasia.canMove(1001, "Concourse"));
 
-        System.out.println(fantasia.move(1003, "Concourse"));
+        System.out.println(fantasia.move(1001, "Concourse"));
 
         // Test to check top up credit method
         System.out.println("Expected to top up credits by 10");
@@ -117,6 +118,7 @@ public class MyTester {
         System.out.println(fantasia.getPassDetails(1001));
         // Convert current credits to points
         fantasia.convertPoints(1001);
+        System.out.println("Expected to convert credits to points - expected 10 points from 30 credits");
         // should return noOfPoints = 10
         System.out.println(fantasia.getPassDetails(1001));
 
