@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=ChildPass
+comment0.text=\n\ \n\ @author\ (Aidan\ Carvalho)\n\ @version\ (11/12/2023)\n
+comment1.params=passID\ guestName\ luxuryRating\ noOfCredits\ parentPassNumber
+comment1.target=ChildPass(int,\ java.lang.String,\ int,\ int,\ int)
+comment2.params=
+comment2.target=boolean\ isEnoughCredits()
+comment3.params=
+comment3.target=void\ deductCredits()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=
+comment5.target=int\ getParentPassNumber()
+comment6.params=
+comment6.target=int\ getZonesVisited()
+numComments=7

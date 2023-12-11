@@ -88,8 +88,8 @@ public class ParkUI {
         System.out.println("Enter pass id");
         int passId = reader.nextInt();
         System.out
-                .println("Pass with Id " + passId + " is currently in the " + fantasia.getPassLocation(passId)
-                        + " zone");
+        .println("Pass with Id " + passId + " is currently in the " + fantasia.getPassLocation(passId)
+            + " zone");
 
     }
 

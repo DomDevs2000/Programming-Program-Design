@@ -88,7 +88,7 @@ public class Zone {
 
     public String toString() {
         return "Zone [name=" + name + ", zoneNumber=" + zoneNumber + ", luxuryRating=" + luxuryRating + ", capacity="
-                + capacity + ", passes=" + listAllPasses() + "]";
+        + capacity + ", passes=" + listAllPasses() + "]";
     }
 
 }

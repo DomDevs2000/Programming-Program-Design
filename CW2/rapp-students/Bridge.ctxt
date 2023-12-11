@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Bridge
-comment0.text=\n\ A\ bridge\ provides\ a\ one-way\ connection\ between\ two\ zones.\ It\n\ has\ a\ bridge\ code\ and\ information\ about\ both\ the\ source\ and\n\ the\ destination\ zone\n\ \n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ A\ bridge\ provides\ a\ one-way\ connection\ between\ two\ zones.\ It\n\ has\ a\ bridge\ code\ and\ information\ about\ both\ the\ source\ and\n\ the\ destination\ zone\n\ \n\ @author\ (Aidan\ Carvalho)\n\ @version\ (11/12/2023)\n
 comment1.params=bridgeCode\ sourceZone\ destinationZone
 comment1.target=Bridge(java.lang.String,\ Zone,\ Zone)
 comment2.params=

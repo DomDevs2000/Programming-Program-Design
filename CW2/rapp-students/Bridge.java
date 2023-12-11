@@ -54,7 +54,7 @@ public class Bridge {
 
     public String toString() {
         return "Bridge [sourceZone=" + sourceZone + "," + sourceZone.getZoneNumber() + ", destinationZone="
-                + destinationZone + "," + destinationZone.getZoneNumber() + "]";
+        + destinationZone + "," + destinationZone.getZoneNumber() + "]";
     }
 
 }

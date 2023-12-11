@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=BusinessPass
+comment0.text=\n\ \n\ @author\ (Aidan\ Carvalho)\n\ @version\ (11/12/2023)\n
+comment1.params=passID\ guestName\ luxuryRating\ noOfCredits\ organizationName
+comment1.target=BusinessPass(int,\ java.lang.String,\ int,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=void\ deductCredits()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment4.params=
+comment4.target=java.lang.String\ getOrganizationName()
+numComments=5

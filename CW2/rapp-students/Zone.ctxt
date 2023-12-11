@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Zone
-comment0.text=\n\ A\ Zone\ is\ part\ of\ a\ RAPP\ resort.Each\ zone\ has\ a\ name,\ a\ luxury\ rating\n\ and\ a\ capacity\ which\ represents\ the\ maximum\ number\ of\ people(passes)\ who\ can\n\ be\ on\ the\n\ zone\ at\ any\ one\ time.\ Each\ zone\ must\ maintain\ a\ list\ of\ all\ people\ (passes)\n\ currently\ on\ the\ zone.\ These\ lists\ are\ updated\ whenever\ passes\ enter\ or\ leave\n\ an\ zone,so\ that\ it\ is\ always\ possible\ to\ say\ how\ many\ people\ (passes)\ are\ in\n\ the\ zone\n\ and\ who\ they\ are.\n\ \n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ A\ Zone\ is\ part\ of\ a\ RAPP\ resort.Each\ zone\ has\ a\ name,\ a\ luxury\ rating\n\ and\ a\ capacity\ which\ represents\ the\ maximum\ number\ of\ people(passes)\ who\ can\n\ be\ on\ the\n\ zone\ at\ any\ one\ time.\ Each\ zone\ must\ maintain\ a\ list\ of\ all\ people\ (passes)\n\ currently\ on\ the\ zone.\ These\ lists\ are\ updated\ whenever\ passes\ enter\ or\ leave\n\ an\ zone,so\ that\ it\ is\ always\ possible\ to\ say\ how\ many\ people\ (passes)\ are\ in\n\ the\ zone\n\ and\ who\ they\ are.\n\ \n\ @author\ Aidan\ Carvalho\n\ @version\ 11/12/2023\n
 comment1.params=name\ zoneNumber\ luxuryRating\ capacity
 comment1.target=Zone(java.lang.String,\ int,\ int,\ int)
 comment10.params=

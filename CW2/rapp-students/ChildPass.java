@@ -26,10 +26,10 @@ public class ChildPass extends Pass {
     @Override
     public String toString() {
         return "ChildPass" + "\n guestName=" + getGuestName() + "\n PassID=" + getPassID() + "\n parentPassNumber="
-                + parentPassNumber
-                + ", \n zonesVisited=" + zonesVisited
-                + "\n luxuryRating="
-                + getLuxuryRating() + "\n credits=" + +getNoOfCredits() + "\n noOfPoints=" + getNoOfPoints() + "]";
+        + parentPassNumber
+        + ", \n zonesVisited=" + zonesVisited
+        + "\n luxuryRating="
+        + getLuxuryRating() + "\n credits=" + +getNoOfCredits() + "\n noOfPoints=" + getNoOfPoints() + "]";
     }
 
     public int getParentPassNumber() {

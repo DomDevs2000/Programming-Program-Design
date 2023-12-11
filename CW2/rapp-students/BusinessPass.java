@@ -23,8 +23,8 @@ public class BusinessPass extends Pass {
     @Override
     public String toString() {
         return "BusinessPass [guestName=" + getGuestName() + "\n  PassID= " + getPassID() + "\n organizationName= "
-                + organizationName + " \n luxuryRating="
-                + getLuxuryRating() + "\n credits=" + getNoOfCredits() + "\n noOfPoints=" + getNoOfPoints() + "]";
+        + organizationName + " \n luxuryRating="
+        + getLuxuryRating() + "\n credits=" + getNoOfCredits() + "\n noOfPoints=" + getNoOfPoints() + "]";
     }
 
     public String getOrganizationName() {
